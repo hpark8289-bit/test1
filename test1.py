@@ -37,4 +37,5 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.run(main)
+    port = int(os.environ.get("PORT", 8000))
+    ft.run(main, port=port, host="0.0.0.0")
